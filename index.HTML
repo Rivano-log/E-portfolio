@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Portfolio Rivano Imanuel</title>
+    <link rel="stylesheet" href="style.CSS">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/9dee79d599.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        emailjs.init({
+            publicKey: "A0qXMSw8LFO93nxf4",
+        });
+    </script>
+
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <div class="succes">
+        <i class="fa-solid fa-circle-check succes__icon"></i>
+        <div class="succes__text">
+            <span class="succes__text__title">Message sent !</span>
+            <p class="succes__text__para"> Your message has been recieved. i'll get back to you soon !</p>
+        </div>
+
+    </div>
+    <!-- NAV BAR -->
+
+    <nav class="nav">
+        <div class="nav__container">
+            <span class="nav__logo"> Rivano Imanuel</span>
+            <div class="nav__links">
+                <a href="#home" class="nav__link">Home</a>
+                <a href="#about" class="nav__link">About</a>
+                <a href="#projects" class="nav__link">Projects</a>
+                <a href="#contact" class="nav__link">
+                    <button class="nav__link__button"> Contact</button>
+                </a>
+            </div>
+            <button class="nav__menu" onclick="openMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div class="menu__wrapper">
+        <nav class="menu">
+            <button class="menu__close" onclick="closeMenu()">
+                <i class="fa-solid fa-x"></i>
+            </button>
+
+            <div class="menu__links">
+                <a href="#home" class="menu__link" onclick="closeMenu()">Home</a>
+                <a href="#about" class="menu__link" onclick="closeMenu()">About</a>
+                <a href="#projects" class="menu__link" onclick="closeMenu()">Projects</a>
+
+                <button class="menu__link__button" onclick="closeMenu()"> Contact</button>
+            </div>
+        </nav>
+    </div>
+
+
+
+    <!-- HEADER -->
+
+    <header id="home">
+        <svg id="visual" viewBox="0 0 1200 1300" width="880" height="1200" xmlns="http://www.w3.org/2000/svg"
+            version="1.1" class="blob blob-header">
+            <g transform="translate(927.4519875387796 -111.9512848530959)">
+                <path
+                    d="M648.8 -752.4C919.6 -545.9 1272.3 -416.2 1356.5 -200.5C1440.7 15.3 1256.4 317.2 1074.3 608.8C892.3 900.4 712.4 1181.7 443.3 1327C174.2 1472.2 -184.1 1481.3 -364.5 1290.3C-544.9 1099.4 -547.4 708.5 -624.9 430.5C-702.4 152.5 -854.9 -12.6 -829.6 -144.5C-804.2 -276.4 -601 -375.2 -433.1 -599.8C-265.2 -824.3 -132.6 -1174.7 28.2 -1208.3C189 -1241.9 378 -958.8 648.8 -752.4"
+                    fill="#ff4d30"></path>
+            </g>
+        </svg>
+        <div class="container">
+            <div class=" row header__row">
+                <span class="header__span">Hey, <strong>I'm</strong></span>
+                <h1 class="header__title"> Rivano Imanuel.</h1>
+                <h2 class="header__subtitle">Freelance <i>Frontend Developer</i></h2>
+                <span class="header__about"> Find out more <a href="#about" class="bold"> about me.</a></span>
+                <div class="header__links">
+                    <a href="https://linkedin.com" class="header__link" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com" class="header__link" target="_blank">
+                        <i class="fa-brands fa-github"></i></a>
+                    <a href="https://resume.com" class="header__link" target="_blank">
+                        <i class="fa-solid fa-file-pdf"></i></a>
+
+                </div>
+                <div class="header__scroll" href="#about">
+                    <i class="fa-solid fa-angle-down"></i>
+                    <i class="fa-solid fa-angle-down"></i>
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+            </div>
+        </div>
+
+
+
+    </header>
+
+    <!-- ABOUT -->
+
+    <main>
+       <section id="about">
+    <div class="container">
+        <div class="row about__row">
+
+            <div class="about__content">
+                <div class="about__text">
+                    <h3 class="about__text__title">About me</h3>
+                    <h4 class="about__text__subtitle"><i>Rivano Imanuel</i></h4>
+                    <p class="about__text__para">I'm a Dutch <strong>freelance frontend developer</strong> with
+                        <strong>commercial, real-world experience</strong>
+                        developing high quality web applications and solving difficult
+                        frontend problems with the use of HTML, CSS, JavaScript and React.
+                    </p>
+                </div>
+
+                <div class="about__skills">
+                    <h3 class="about__skills__title">My skills</h3>
+
+                    <div class="about__skills__list">
+                        <div class="about__skill">
+                            <i class="fa-brands fa-html5"></i>
+                        </div>
+                        <div class="about__skill">
+                            <i class="fa-brands fa-css3-alt"></i>
+                        </div>
+                        <div class="about__skill">
+                            <i class="fa-brands fa-js"></i>
+                        </div>
+                        <div class="about__skill">
+                            <i class="fa-brands fa-react"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <figure class="about__image__wrapper">
+                <img src="about-image.png" alt="about image" class="about__image">
+            </figure>
+
+        </div>
+    </div>
+</section>
+
+
+
+        <!-- Projects -->
+        <section id="projects">
+            <div class="container">
+
+                <svg viewBox="0 0 1200 1300" class="blob blob-projects">
+                    <g transform="translate(927.45 -111.95)">
+                        <path
+                            d="M648.8 -752.4C919.6 -545.9 1272.3 -416.2 1356.5 -200.5C1440.7 15.3 1256.4 317.2 1074.3 608.8C892.3 900.4 712.4 1181.7 443.3 1327C174.2 1472.2 -184.1 1481.3 -364.5 1290.3C-544.9 1099.4 -547.4 708.5 -624.9 430.5C-702.4 152.5 -854.9 -12.6 -829.6 -144.5C-804.2 -276.4 -601 -375.2 -433.1 -599.8C-265.2 -824.3 -132.6 -1174.7 28.2 -1208.3C189 -1241.9 378 -958.8 648.8 -752.4"
+                            fill="#ff4d30"></path>
+                    </g>
+                </svg>
+
+                <svg viewBox="0 0 1200 1300" class="blob blob-projects2">
+                    <g transform="translate(927.45 -111.95)">
+                        <path
+                            d="M648.8 -752.4C919.6 -545.9 1272.3 -416.2 1356.5 -200.5C1440.7 15.3 1256.4 317.2 1074.3 608.8C892.3 900.4 712.4 1181.7 443.3 1327C174.2 1472.2 -184.1 1481.3 -364.5 1290.3C-544.9 1099.4 -547.4 708.5 -624.9 430.5C-702.4 152.5 -854.9 -12.6 -829.6 -144.5C-804.2 -276.4 -601 -375.2 -433.1 -599.8C-265.2 -824.3 -132.6 -1174.7 28.2 -1208.3C189 -1241.9 378 -958.8 648.8 -752.4"
+                            fill="#ff4d30"></path>
+                    </g>
+                </svg>
+
+                <div class="row projects__row">
+                    <h2 class="projects__title">Projects</h2>
+
+                    <div class="projects__slider">
+                        <button class="slider__btn slider__btn--prev" type="button" aria-label="Previous project">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+
+                        <div class="projects__viewport">
+                            <div class="projects__track">
+
+                                <!-- PROJECT 1 -->
+                                <div class="project">
+                                    <figure class="project__image__wrapper">
+                                        <img src="car.rental.png" class="project__image" alt="Car rental project" />
+                                        <div class="project__image__links">
+                                            <a href="https://car-rental-swart-five.vercel.app/"
+                                                class="project__image__link" target="_blank">
+                                                <i class="fa-solid fa-up-right-from-square"></i>
+                                            </a>
+                                            <a href="https://github.com/Rivano-log" class="project__image__link"
+                                                target="_blank">
+                                                <i class="fa-brands fa-github"></i>
+                                            </a>
+                                        </div>
+                                    </figure>
+
+                                    <div class="project__description">
+                                        <h3 class="project__title"><strong>Car Rental Platform</strong></h3>
+
+                                        <div class="project__skills">
+                                            <span class="project__skill">HTML</span>
+                                            <span class="project__skill">CSS</span>
+                                            <span class="project__skill">JavaScript</span>
+                                            <span class="project__skill">React</span>
+                                        </div>
+
+                                        <p class="projects__para">
+                                            Responsive car rental website with a clean interface, clear navigation,
+                                            and reusable components built using HTML, CSS, and JavaScript.
+                                        </p>
+
+                                        <div class="project__links">
+                                            <a href="https://car-rental-swart-five.vercel.app/" class="project__link">
+                                                Live <i class="fa-solid fa-up-right-from-square"></i>
+                                            </a>
+                                            <a href="https://github.com/Rivano-log" class="project__link">
+                                                Code <i class="fa-brands fa-github"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- PROJECT 2 -->
+                                <div class="project">
+                                    <figure class="project__image__wrapper">
+                                        <img src="e-comerce.png" class="project__image" alt="E-commerce project" />
+                                        <div class="project__image__links">
+                                            <a href="https://e-commerce-project-eta-seven.vercel.app"
+                                                class="project__image__link" target="_blank">
+                                                <i class="fa-solid fa-up-right-from-square"></i>
+                                            </a>
+                                            <a href="https://github.com/Rivano-log" class="project__image__link"
+                                                target="_blank">
+                                                <i class="fa-brands fa-github"></i>
+                                            </a>
+                                        </div>
+                                    </figure>
+
+                                    <div class="project__description">
+                                        <h3 class="project__title"><strong>E-Commerce</strong></h3>
+
+                                        <div class="project__skills">
+                                            <span class="project__skill">HTML</span>
+                                            <span class="project__skill">CSS</span>
+                                            <span class="project__skill">JavaScript</span>
+                                            <span class="project__skill">React</span>
+                                        </div>
+
+                                        <p class="projects__para">
+                                            Responsive e-commerce layout with structured product sections,
+                                            consistent spacing, and a scalable front-end built using HTML, CSS, and
+                                            JavaScript.
+                                        </p>
+
+                                        <div class="project__links">
+                                            <a href="https://e-commerce-project-eta-seven.vercel.app/"
+                                                class="project__link">
+                                                <span>Live Link</span>
+                                                <i class="fa-solid fa-up-right-from-square"></i>
+                                            </a>
+                                            <a href="https://github.com/Rivano-log" class="project__link">
+                                                <span>Code</span>
+                                                <i class="fa-brands fa-github"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- PROJECT 3 -->
+                                <div class="project">
+                                    <figure class="project__image__wrapper">
+                                        <img src="landigpage.png" class="project__image" alt="Landing page project" />
+                                        <div class="project__image__links">
+                                            <a href="https://landingpage-project-chi.vercel.app"
+                                                class="project__image__link" target="_blank">
+                                                <i class="fa-solid fa-up-right-from-square"></i>
+                                            </a>
+                                            <a href="https://github.com/Rivano-log" class="project__image__link"
+                                                target="_blank">
+                                                <i class="fa-brands fa-github"></i>
+                                            </a>
+                                        </div>
+                                    </figure>
+
+                                    <div class="project__description">
+                                        <h3 class="project__title"><strong>Landing Page</strong></h3>
+
+                                        <div class="project__skills">
+                                            <span class="project__skill">HTML</span>
+                                            <span class="project__skill">CSS</span>
+                                            <span class="project__skill">JavaScript</span>
+                                            <span class="project__skill">React</span>
+                                        </div>
+
+                                        <p class="projects__para">
+                                            Clean and responsive landing page focused on user flow, layout
+                                            structure, and clear call-to-action sections using HTML, CSS, and
+                                            JavaScript.
+                                        </p>
+
+                                        <div class="project__links">
+                                            <a href="https://landingpage-project-chi.vercel.app/" class="project__link">
+                                                Live <i class="fa-solid fa-up-right-from-square"></i>
+                                            </a>
+                                            <a href="https://github.com/Rivano-log" class="project__link">
+                                                Code <i class="fa-brands fa-github"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- PROJECT 4 -->
+                                <div class="project">
+                                    <figure class="project__image__wrapper">
+                                        <img src="burger.png" class="project__image" alt="Restaurant project" />
+                                        <div class="project__image__links">
+                                            <a href="https://restaurant-project-psi-sable.vercel.app/"
+                                                class="project__image__link" target="_blank">
+                                                <i class="fa-solid fa-up-right-from-square"></i>
+                                            </a>
+                                            <a href="https://github.com/Rivano-log" class="project__image__link"
+                                                target="_blank">
+                                                <i class="fa-brands fa-github"></i>
+                                            </a>
+                                        </div>
+                                    </figure>
+
+                                    <div class="project__description">
+                                        <h3 class="project__title"><strong>Restaurant Website</strong></h3>
+
+                                        <div class="project__skills">
+                                            <span class="project__skill">HTML</span>
+                                            <span class="project__skill">CSS</span>
+                                            <span class="project__skill">JavaScript</span>
+                                            <span class="project__skill">React</span>
+                                        </div>
+
+                                        <p class="projects__para">
+                                            Responsive restaurant website with engaging design, menu sections, and
+                                            intuitive navigation to create a smooth and user-friendly experience.
+                                        </p>
+
+                                        <div class="project__links">
+                                            <a href="https://restaurant-project-psi-sable.vercel.app/"
+                                                class="project__link">
+                                                Live <i class="fa-solid fa-up-right-from-square"></i>
+                                            </a>
+                                            <a href="https://github.com/Rivano-log" class="project__link"
+                                                target="_blank">
+                                                Code <i class="fa-brands fa-github"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <button class="slider__btn slider__btn--next" type="button" aria-label="Next project">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact -->
+
+        <section id="contact">
+            <div class="container">
+                <div class="row row__contact">
+
+                    <div class="contact__description">
+                        <h2 class="contact__title">Contact</h2>
+                        <h3 class="contact__subtitle">Ready to <strong>build </strong>something great?</h3>
+                        <p class="contact__para">
+                            If you have any opportunities, ideas, or questions you want to throw my way,
+                            don't hesitate to message me!
+                        </p>
+                        <a href="mailto:r.imanuel@live.nl" class="contact__email">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span><strong>r.imanuel@live.nl</strong></span>
+                        </a>
+                    </div>
+                    <form class="contact__form" id="contactForm" onsubmit="sendEmail(event)">
+                        <div class="form__item">
+                            <label class="form__item__label">Name</label>
+                            <input type="text" name="name" required class="form__item__input">
+                        </div>
+
+                        <div class="form__item">
+                            <label class="form__item__label">Email</label>
+                            <input type="email" name="email" required class="form__item__input">
+                        </div>
+
+                        <div class="form__item">
+                            <label class="form__item__label">Message</label>
+                            <textarea name="message" required class="form__item__textarea"></textarea>
+                        </div>
+
+                        <button type="submit" class="contact__form__submit" id="contactSubmitBtn">
+                            <span class="btn-text">Get in touch </span>
+                            <i class="fa-solid fa-arrow-right btn-arrow"></i>
+
+                            <div class="contact__form__loading">
+                                <i class="fa-solid fa-spinner contact__form__loading__icon"></i>
+                            </div>
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+
+
+    <footer>
+
+        <div class="row footer__row">
+            <span class="footer__copyright"> © 2026 Rivano Imanuel. All rights reserved.</span>
+
+            <div class="footer__links">
+                <a href="https://linkedin.com" target="blank" class="footer__link"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com" target="blank" class="footer__link"> <i
+                        class="fa-brands fa-github"></i></a>
+                <a href="https://website.com" target="blank" class="footer__link"><i
+                        class="fa-solid fa-file-pdf"></i></a>
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+
+    </footer>
+
+
+
+</body>
+
+</html>
