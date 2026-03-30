@@ -331,6 +331,7 @@ button:hover {
 }
 
 .header__scroll {
+    
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -338,6 +339,7 @@ button:hover {
     left: 50%;
     transform: translateX(-50%);
     cursor: pointer;
+    color: var(--primary);
     animation: fadeInAnimate 500ms 500ms backwards, headerScrollAnimate 1000ms infinite alternate-reverse;
 }
 
@@ -400,6 +402,8 @@ button:hover {
   font-size: 16px;
   font-weight: 700;
   margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .about__skill__wrapper {
@@ -1209,6 +1213,7 @@ footer {
         gap: 56px;
         flex-wrap: wrap;
         margin-top: 16px;
+        
     }
 
     .slider__btn {
@@ -1442,7 +1447,10 @@ footer {
         flex-wrap: wrap;
         margin-top: 16px;
     }
-
+.project__link{
+    color: var(--primary
+);
+}
     .projects__slider {
         position: relative;
         width: 100%;
@@ -1513,6 +1521,10 @@ footer {
 
     .about__skills {
         align-items: center;
+    }
+    .about__skills__list{
+        display: flex;
+        justify-content: center;
     }
 }
 
