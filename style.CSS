@@ -1911,26 +1911,3 @@ footer {
   font-size: 40px;}
 /* } fix */
 
-
-.shape,
-.blob,
-.header__shape,
-.hero__bg {
-  pointer-events: none;
-}
-
-.nav {
-  z-index: 100;
-  position: relative;
-}
-
-.nav__menu {
-  z-index: 101;
-  position: relative;
-  cursor: pointer;
-}
-
-.slider__btn {
-  z-index: 50;
-  position: absolute;
-}
