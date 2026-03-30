@@ -1,21 +1,16 @@
-function openMenu(){
-const body = document.body
-
-body.classList.add ("open")
-
-console.log (body)
+function openMenu() {
+  document.body.classList.add("open");
 }
 
-function closeMenu () {
-const body = document.body
-body.classList.remove ("open")
-
-console.log (body)
+function closeMenu() {
+  document.body.classList.remove("open");
 }
+
 async function sendEmail(event) {
   event.preventDefault();
 
   const btn = document.getElementById("contactSubmitBtn");
+  const successBox = document.querySelector(".succes");
 
   try {
     btn.classList.add("loading");
@@ -27,14 +22,20 @@ async function sendEmail(event) {
     );
 
     btn.classList.remove("loading");
-    btn.classList.add("success");
+    event.target.reset();
 
+    if (successBox) {
+      successBox.classList.add("show");
+
+      setTimeout(() => {
+        successBox.classList.remove("show");
+      }, 3000);
+    }
   } catch (error) {
     console.error(error);
     btn.classList.remove("loading");
   }
 }
-
 
 const track = document.querySelector(".projects__track");
 const prevBtn = document.querySelector(".slider__btn--prev");

@@ -944,28 +944,28 @@ button:hover {
 }
 
 .succes {
-    position: fixed;
-    width: 320px;
-    background-color: white;
-    top: 12px;
-    right: 12px;
-    z-index: 20;
-    border-radius: 4px;
-    padding: 20px;
-    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.1);
-    display: flex;
-    gap: 16px;
-    line-height: 1.4;
-    transform: translateX(120%);
-    transition: transform 300ms ease, opacity 300ms ease;
-    opacity: 0;
-    pointer-events: none;
+  position: fixed;
+  width: 320px;
+  background-color: white;
+  top: 12px;
+  right: 12px;
+  z-index: 20;
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 16px;
+  line-height: 1.4;
+  transform: translateX(120%);
+  transition: transform 300ms ease, opacity 300ms ease;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .succes.show {
-    transform: translateX(0);
-    opacity: 1;
-    pointer-events: auto;
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .succes__icon {
@@ -1013,10 +1013,7 @@ button:hover {
     animation: loadingSpinner 1000ms linear infinite;
 }
 
-.contact__form__submit.loading .btn-text,
-.contact__form__submit.loading .btn-arrow {
-    opacity: 0;
-}
+
 
 
 @keyframes loadingSpinner {
@@ -1029,10 +1026,8 @@ button:hover {
     }
 }
 
-.contact__form__submit.success {
-    background-color: #22c55e;
-    border-color: #22c55e;
-}
+
+
 
 .contact__form__submit.success .btn-arrow,
 .contact__form__submit.success .contact__form__loading {
