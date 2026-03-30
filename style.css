@@ -744,7 +744,7 @@ button:hover {
     display: flex;
     align-items: center;
     gap: 6px;
-    color: black;
+    color: var(--primary);
     font-size: 14px;
     font-weight: 700;
 
@@ -1918,3 +1918,26 @@ footer {
   font-size: 40px;}
 /* } fix */
 
+.nav__menu,
+.menu__close,
+.menu__link,
+.menu__link__button,
+.nav__link__button,
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.nav__menu {
+  -webkit-tap-highlight-color: transparent;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+}
