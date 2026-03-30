@@ -164,11 +164,6 @@ html {
     border-radius: 9999px;
 }
 
-button:hover {
-    background-color: black;
-    color: white;
-    cursor: pointer;
-}
 
 .nav__menu {
     background-color: transparent;
@@ -1916,28 +1911,60 @@ footer {
 
 .contact__subtitle {
   font-size: 40px;}
-/* } fix */
+
+
+  /* } fix */
+/* ===== FIX iOS HAMBURGER + CLOSE BUTTON ===== */
 
 .nav__menu,
 .menu__close,
-.menu__link,
-.menu__link__button,
-.nav__link__button,
-a,
-button {
-  -webkit-tap-highlight-color: transparent;
+.nav__menu i,
+.menu__close i {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  text-decoration: none;
 }
 
-button {
-  appearance: none;
-  -webkit-appearance: none;
-  border: none;
-  outline: none;
-  background: transparent;
-}
+/* Hamburger button */
 .nav__menu {
-  -webkit-tap-highlight-color: transparent;
-  appearance: none;
-  -webkit-appearance: none;
-  outline: none;
+  background: transparent !important;
+  color: black !important;
+}
+
+/* Close (X) button */
+.menu__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 18px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background: white !important;
+  color: var(--primary) !important;
+}
+
+/* Force no blue / hover / active styles */
+.nav__menu:hover,
+.nav__menu:active,
+.nav__menu:focus,
+.nav__menu:focus-visible {
+  background: transparent !important;
+  color: black !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.menu__close:hover,
+.menu__close:active,
+.menu__close:focus,
+.menu__close:focus-visible {
+  background: white !important;
+  color: var(--primary) !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
